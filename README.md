@@ -16,7 +16,7 @@ Watches your go files in a directory and invokes go build if file changed.<br/>
 Github location:<br/>
 https://github.com/githubnemo/CompileDaemon<br/>
   
-From your project folder where the go.mod is located:<br/>
+Install:<br/>
 go get github.com/githubnemo/CompileDaemon<br/>
 go install github.com/githubnemo/CompileDaemon<br/>
 Dependency will be added to your go.mod<br/>
@@ -30,14 +30,16 @@ Every time you change your code, the CompileDaemon will compile and run your exe
 ### Web Framework - Gin
 GitHub location:<br/>
 https://github.com/gin-gonic/gin<br/>
-Load it from your project folder where the go.mod is located:<br/>
+
+Install:<br/>
 go get -u github.com/gin-gonic/gin<br/>
 Dependency will be added to your go.mod.<br/>
 <br/>
 ### Go dot env
 Github location:<br/>
 https://github.com/joho/godotenv<br/>
-From your project folder where the go.mod is located:<br/> 
+
+Install:<br/> 
 go get github.com/joho/godotenv<br/>
 <br/>
 Dependency will be added to your go.mod.<br/>
@@ -45,7 +47,15 @@ Dependency will be added to your go.mod.<br/>
 ### Gorm - to connect to postgres
 https://gorm.io/docs/
 
-Execute these:<br/>
+Install these:<br/>
 go get -u gorm.io/gorm<br/>
 go get -u gorm.io/driver/postgres<br/>
 
+### Bcrypt
+https://pkg.go.dev/golang.org/x/crypto/bcrypt
+
+### JWT
+https://github.com/golang-jwt/jwt
+
+Install:<br/>
+go get -u github.com/golang-jwt/jwt/v4<br/>
