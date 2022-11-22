@@ -45,8 +45,7 @@ Dependency will be added to your go.mod.<br/>
 ### Gorm - to connect to postgres
 https://gorm.io/docs/
 
-Execute these:
-go get -u gorm.io/gorm
-go get -u gorm.io/driver/postgres
+Execute these:<br/>
+go get -u gorm.io/gorm<br/>
+go get -u gorm.io/driver/postgres<br/>
 
-# jwt_example
