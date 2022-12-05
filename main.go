@@ -9,6 +9,8 @@ import (
 
 func init() {
 	config.InitEnv()
+	config.ConnectDB()
+	config.CreateDB()
 }
 func main() {
 	r := gin.Default()
