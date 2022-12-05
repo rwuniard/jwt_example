@@ -99,6 +99,28 @@ func Login(c *gin.Context) {
 
 	// Return the token
 	c.SetSameSite(http.SameSiteLaxMode)
-	c.SetCookie("Authorization", tokenString, 3600, "", "localhost", false, true)
+	c.SetCookie("Authorization", tokenString, 60*3600, "", "localhost", false, true)
 	c.JSON(http.StatusOK, gin.H{})
+}
+
+func Validate(c *gin.Context) {
+	user, exists := c.Get("user")
+	if exists {
+		c.JSON(http.StatusOK, gin.H{
+			"message": user,
+		})
+	} else {
+		c.JSON(http.StatusUnauthorized, gin.H{
+			"message": "User not found",
+		})
+	}
+
+}
+
+func Logout(c *gin.Context) {
+	c.SetCookie("user", "", -1, "", "localhost", false, true)
+	c.SetCookie("Authorization", "", -1, "", "localhost", false, true)
+	c.JSON(http.StatusOK, gin.H{
+		"message": "User is logged out",
+	})
 }
