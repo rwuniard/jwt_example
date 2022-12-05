@@ -2,6 +2,7 @@ package main
 
 import (
 	"jwt_example/config"
+	"jwt_example/controllers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -19,5 +20,7 @@ func main() {
 			"message": "pong",
 		})
 	})
+	r.POST("/signup", controllers.SignUp)
+	r.POST("/login", controllers.Login)
 	r.Run()
 }
