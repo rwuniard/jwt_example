@@ -49,6 +49,7 @@ How to use it<br/>
 CompileDaemon -command=“./<Your_executable_filename>”<br/>
 Every time you change your code, the CompileDaemon will compile and run your executable.<br/> 
 <br/>
+
 ### Web Framework - Gin
 GitHub location:<br/>
 https://github.com/gin-gonic/gin<br/>
@@ -57,6 +58,7 @@ Install:<br/>
 go get -u github.com/gin-gonic/gin<br/>
 Dependency will be added to your go.mod.<br/>
 <br/>
+
 ### Go dot env
 Github location:<br/>
 https://github.com/joho/godotenv<br/>
@@ -66,15 +68,18 @@ go get github.com/joho/godotenv<br/>
 <br/>
 Dependency will be added to your go.mod.<br/>
 <br/>
+
 ### Gorm - to connect to postgres
 https://gorm.io/docs/
 
 Install these:<br/>
 go get -u gorm.io/gorm<br/>
 go get -u gorm.io/driver/postgres<br/>
+<br/>
 
 ### Bcrypt
-https://pkg.go.dev/golang.org/x/crypto/bcrypt
+https://pkg.go.dev/golang.org/x/crypto/bcrypt<br/>
+<br/>
 
 ### JWT
 https://github.com/golang-jwt/jwt
