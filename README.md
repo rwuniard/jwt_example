@@ -6,11 +6,33 @@ You can run with this on the command line after the dependencies are setup.<br/>
 It will re-compile/run it if there is any code changes.<br/>
 CompileDaemon -command="./jwt_example"<br/>
 <br/>
-Send GET request through web browser or Postman with body message<br/>
+Send these requests:<br/>
+http://localhost:3000/signup<br/>
+POST request through Postman with body message<br/>
 {
-    "DataCenterId": 9,
-    "MachineId": 2
+    "email": "test@test.user.com,
+    "password": "abc1234"
 }
+<br/>
+<br/>
+http://localhost:3000/login<br/>
+POST request through Postman with body message<br/>
+{
+    "email": "test@test.user.com,
+    "password": "abc1234"
+}
+It will return a cookie with Authorization value of JWT
+<br/>
+<br/>
+http://localhost:3000/validate<br/>
+GET request Postman with body message<br/>
+This will allow to do any operation afterwards. 
+<br/>
+<br/>
+http://localhost:3000/logout<br/>
+GET request Postman with body message<br/>
+This will remove the cookie Authorization value. 
+
 ## Setting up the dependencies
 Watches your go files in a directory and invokes go build if file changed.<br/>  
 Github location:<br/>
